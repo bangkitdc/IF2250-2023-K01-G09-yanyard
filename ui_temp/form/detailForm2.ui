@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	border: none;
+	background-color: transparent;
+	background: transparent;
+	padding: 0;
+	margin: 0;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="header" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>960</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#header {
+	background-color: #3C6255;
+}</string>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QFrame" name="frame_temp">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item alignment="Qt::AlignLeft">
+         <widget class="QPushButton" name="btn_back">
+          <property name="styleSheet">
+           <string notr="true">#btn_back {
+	color: #F7F4D9;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+#btn_back:hover {
+	color: #DEDBC0;
+}</string>
+          </property>
+          <property name="text">
+           <string> Kembali</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../artikel/resources.qrc">
+            <normaloff>:/icons/left__arrow2.svg</normaloff>:/icons/left__arrow2.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_logo">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="logo">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>42</width>
+            <height>42</height>
+           </size>
+          </property>
+          <property name="pixmap">
+           <pixmap>../artikel/logo_circle.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_temp_2">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="body" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>64</y>
+      <width>960</width>
+      <height>536</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#body {
+	background-color: #F7F4D9;
+}</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QFrame" name="content">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="submit">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>466</y>
+          <width>960</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QPushButton" name="btn_submit">
+         <property name="geometry">
+          <rect>
+           <x>415</x>
+           <y>6</y>
+           <width>130</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#btn_submit {
+	border-radius: 20px;
+	background: #3C6255;
+	color: #F7F3D7;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+#btn_submit:hover {
+    background-color: #23493C;
+}</string>
+         </property>
+         <property name="text">
+          <string>Submit</string>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>960</width>
+          <height>467</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QPlainTextEdit" name="deskripsitanaman">
+         <property name="geometry">
+          <rect>
+           <x>296</x>
+           <y>360</y>
+           <width>368</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#deskripsitanaman {
+	padding: 17px 17px;
+	font-size: 14px;
+	border-radius: 15px;
+	background: #61876E;
+	color: #F7F3D7;
+	height: 40px;
+	font-weight: 600;
+	width: 243px;
+}</string>
+         </property>
+         <property name="plainText">
+          <string>Tulis deskripsi</string>
+         </property>
+         <property name="overwriteMode">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPlainTextEdit" name="nama_tanaman">
+         <property name="geometry">
+          <rect>
+           <x>296</x>
+           <y>308</y>
+           <width>368</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#nama_tanaman {
+	padding: 7px 17px;
+	font-size: 14px;
+	border-radius: 15px;
+	background: #61876E;
+	color: #F7F3D7;
+	height: 40px;
+	font-weight: 600;
+	width: 243px;
+}</string>
+         </property>
+         <property name="plainText">
+          <string>Masukkan nama tanaman</string>
+         </property>
+         <property name="overwriteMode">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="add_tanaman_btn">
+         <property name="geometry">
+          <rect>
+           <x>371</x>
+           <y>19</y>
+           <width>221</width>
+           <height>271</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="contextMenuPolicy">
+          <enum>Qt::NoContextMenu</enum>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#add_tanaman_btn{
+	border-radius: 50px;
+	background: #C4C4C4;
+	color: #61876E;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	padding-top: 45px;
+	padding-bottom: 30px;
+}
+
+#add_tanaman_btn::hover {
+    background-color: #a3a3a3;
+}</string>
+         </property>
+         <property name="text">
+          <string>Add Photo</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../assets/icons/add_tanaman_icon.png</normaloff>../../assets/icons/add_tanaman_icon.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>140</width>
+           <height>140</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../artikel/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
