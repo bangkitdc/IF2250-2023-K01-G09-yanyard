@@ -1,5 +1,7 @@
 # yanyard - Aplikasi Jurnal Tanaman
 
+Copy from [GitLab Repo](https://gitlab.informatika.org/bangkitdc/if2250-2023-k01-g09-yanyard)
+
 ## Daftar Isi
 
 - [Deskripsi Aplikasi](#deskripsi-aplikasi)
