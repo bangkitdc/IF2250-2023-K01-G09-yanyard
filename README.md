@@ -2,6 +2,10 @@
 
 Copy from [GitLab Repo](https://gitlab.informatika.org/bangkitdc/if2250-2023-k01-g09-yanyard)
 
+<p align="center">
+    <img src="https://github.com/bangkitdc/IF2250-2023-K01-G09-yanyard/blob/main/assets/rpl_gif.gif" width=700>
+</p>
+
 ## Daftar Isi
 
 - [Deskripsi Aplikasi](#deskripsi-aplikasi)
